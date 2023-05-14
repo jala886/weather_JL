@@ -3,13 +3,13 @@ This is  an app to fech and show data from OpenWeather
 [Demo](./DemoSnapshot/SimulatorScreenRecording.gif)
 
 
-## 🚀 Features
+## 馃殌 Features
 ```
 UIKit mixed with SwiftUI
 MVVM pattern
 TDD development
 ```
-### 🖼 Overlays
+### 馃柤 Overlays
 ```
 Based on MVVM pattern
     * Views
@@ -47,35 +47,35 @@ TDD:
     WeatherIcon_JLTests
     WeatherIcon_JLUITests
 ```
-### 🛠 Appearance / Behavior Customization
+### 馃洜 Appearance / Behavior Customization
 ![Demo Snapshot](./DemoSnapshot/startScreen.png)
 ![Demo Snapshot](./DemoSnapshot/searchScreen.png)
 
-### 👀 Adapt visibility of:
+### 馃憖 Adapt visibility of:
 
 
-### 🪄 Custom controls
+### 馃獎 Custom controls
 
 
-## 💻 Supported Platforms
+## 馃捇 Supported Platforms
 
-| 📱 | iOS 13+ |
+| 馃摫 | iOS 13+ |
 | :-: | :-: |
-| 🖥 | **macOS 10.15+** | 
-| 📺 | **tvOS 13+** |
-| ⌚️ | **watchOS 6+** |
+| 馃枼 | **macOS 10.15+** | 
+| 馃摵 | **tvOS 13+** |
+| 鈱氾笍 | **watchOS 6+** |
 
 
 
-### 📌 Annotations: The old-fashioned approach
+### 馃搶 Annotations: The old-fashioned approach
 
 
 
-## 🔩 Installation
+## 馃敥 Installation
 
 
-## ✍️ Author
+## 鉁嶏笍 Author
 
 Jian Li
 
-## 📄 License
+## 馃搫 License
