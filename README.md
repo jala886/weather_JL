@@ -1,5 +1,6 @@
 <img src="./DemoSnapshot/appIcon.jpeg" width="100">
 This is  an app to fech and show data from OpenWeather
+[Demo](./DemoSnapshot/Simulator Screen Recording - iPhone 14 Pro - 2023-05-13 at 20.13.34.gif)
 
 
 ## 🚀 Features
