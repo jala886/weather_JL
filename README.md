@@ -1,5 +1,5 @@
 <img src="./DemoSnapshot/appIcon.jpeg" width="100">
-This is  open weather app for a inteview
+This is  an app to fech and show data from OpenWeather
 
 
 ## 🚀 Features
