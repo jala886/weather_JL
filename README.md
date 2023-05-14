@@ -1,5 +1,7 @@
 <img src="./DemoSnapshot/appIcon.jpeg" width="100">
 This is  an app to fech and show data from OpenWeather
+
+
 [Demo](./DemoSnapshot/SimulatorScreenRecording.gif)
 
 
