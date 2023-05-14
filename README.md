@@ -1,4 +1,4 @@
-![Demo Snapshot](./DemoSnapshot/appIcon.jpeg)
+![Demo Snapshot](./DemoSnapshot/appIcon.jpeg | width=100)
 This is  open weather app for a inteview
 
 
