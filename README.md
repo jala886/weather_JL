@@ -66,8 +66,8 @@ TDD:
 ### [WeatherIcon_JLUITests Demo](./DemoSnapshot/UITestRecording.gif)
 
 ### 🛠 Appearance / Behavior Customization
-![Demo Snapshot](./DemoSnapshot/startScreen.png)
-![Demo Snapshot](./DemoSnapshot/searchScreen.png)
+<img src="./DemoSnapshot/startScreen.png" width="300">
+<img src="./DemoSnapshot/searchScreen.png" width="300">
 
 ### 👀 Adapt visibility of:
 
