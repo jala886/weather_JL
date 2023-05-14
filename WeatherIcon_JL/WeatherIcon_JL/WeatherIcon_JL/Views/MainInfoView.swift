@@ -18,7 +18,7 @@ struct MainInfoView: View {
     
     @ViewBuilder func timeView() -> some View {
         VStack {
-            Text(Date(), formatter: dateFormatter)
+            Text(getTimeZoneTime(info: vm.weatherInfo.timezone), formatter: dateFormatter)
                 .foregroundColor(.red)
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity)
@@ -80,6 +80,7 @@ struct MainInfoView: View {
     
     var body: some View {
         Group {
+
             if vm.weatherInfo.cityName == nil &&
                 vm.weatherInfo.temp == nil {
                 ProgressView().scaleEffect(2.0, anchor: .center)

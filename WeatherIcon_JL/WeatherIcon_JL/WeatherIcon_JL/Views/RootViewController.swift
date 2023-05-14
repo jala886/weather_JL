@@ -16,16 +16,14 @@ import SwiftUI
 // (2.2) show weather information
 // (2.3) show location or map information
 
-@MainActor
 class RootViewController: UIViewController {
     
     // MARK: Properties defined
     
-    private var locationBtn = {
+    private lazy var locationBtn = {
         let btn = UIButton(type: .system)
         btn.setImage(UIImage(systemName: "paperplane"), for: .normal)
         btn.addTarget(self, action: #selector(locationAction), for: .touchUpInside)
-        btn.clipsToBounds = true
         return btn
     }()
     
@@ -93,7 +91,7 @@ class RootViewController: UIViewController {
         }
     }
     
-    @objc private func locationAction() {
+    @objc func locationAction() {
         self.viewModel?.weatherInfo.cityName = nil
         updateData()
     }
@@ -105,7 +103,6 @@ class RootViewController: UIViewController {
     }
 }
 
-@MainActor
 extension RootViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if !searchText.isEmpty {

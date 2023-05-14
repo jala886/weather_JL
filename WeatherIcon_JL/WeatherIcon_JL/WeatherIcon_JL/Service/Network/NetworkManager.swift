@@ -23,7 +23,6 @@ class NetworkManager: NetworkManagerProtocol {
     // used async/wait
     func fetchWeatherInfoByName(cityName: String? = nil, country: String? = nil, state: String? = nil) async throws -> Response? {
         let base = URLs.base.string
-        let value = [cityName ?? Global.DEFAULTCITY , country ?? "" , state ?? ""].joined(separator: ",")
         guard let cityName = cityName
         else { return nil }
         let urlString = base + "q="+cityName+"&appid="+Global.APPID

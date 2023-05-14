@@ -10,6 +10,8 @@ import SwiftUI
 
 @MainActor
 class WeatherViewModel: ObservableObject {
+    static let userDefaultKey = "weather_cityName"
+    
     @Published var weatherInfo = WeatherInfomation()
 
     private let networkManager: NetworkManagerProtocol
@@ -23,12 +25,17 @@ class WeatherViewModel: ObservableObject {
     
     func loadData() async {
         var response: Response?
-        // (1) have city
         do {
             if let cityName = weatherInfo.cityName {
+                // (0) have city
                 response = try? await networkManager.fetchWeatherInfoByName(cityName: cityName,
                                                                             country: nil, state: nil)
-            } else if let position = locationService.getPosition() { // (2) user city
+            }else if let cityName = UserDefaults.standard.object(forKey: Self.userDefaultKey) as? String {
+                // (1) last city
+                response = try? await networkManager.fetchWeatherInfoByName(cityName: cityName ,
+                                                                            country: nil, state: nil)
+            } else if let position = locationService.getPosition() {
+                // (2) user's location city
                 response = try await networkManager.fetchWeatherInfoByPosition(lat: position.lat, lon: position.lon)
             } else {
                 // (3) default city
@@ -40,7 +47,8 @@ class WeatherViewModel: ObservableObject {
             print(error.localizedDescription)
         }
         if let response = response {
-                saverResponseToinfo(response)
+                saveResponseToinfo(response)
+                saveLastCityName()
                 // download icon
                 if let iconName = response.weather?.first?.icon {
                     try? networkManager.fetchIcon(name: iconName){ data in
@@ -49,8 +57,13 @@ class WeatherViewModel: ObservableObject {
                 }
         }
     }
-    
-    private func saverResponseToinfo(_ response: Response) {
+     
+    private func saveLastCityName()  {
+        if let cityName = self.weatherInfo.cityName {
+            UserDefaults.standard.set(cityName, forKey: Self.userDefaultKey)
+        }
+    }
+    private func saveResponseToinfo(_ response: Response) {
         self.weatherInfo.cityName = response.name
         self.weatherInfo.lat = response.coord?.lat
         self.weatherInfo.lon = response.coord?.lon
