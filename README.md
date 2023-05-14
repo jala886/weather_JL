@@ -63,7 +63,7 @@ TDD:
 		(2) delete "tokyo"
 		(3) inout "atlanta"
 ```
-### [UITest Demo](./DemoSnapshot/UITestRecording.gif)
+### [WeatherIcon_JLUITests Demo](./DemoSnapshot/UITestRecording.gif)
 
 ### 🛠 Appearance / Behavior Customization
 ![Demo Snapshot](./DemoSnapshot/startScreen.png)
