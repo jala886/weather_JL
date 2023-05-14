@@ -52,7 +52,17 @@ Based on MVVM pattern
 
 TDD: 
     WeatherIcon_JLTests
+	test_networkManager_FetchByName()
+	test_networkManager_FetchByPosition()
+	test_networkManager_FetchIcon()
+	test_locationService()
     WeatherIcon_JLUITests
+	MainInfoView_Previews
+	testExample()
+		(1) auto start app, input "tokyo"
+		(2) delete "tokyo"
+		(3) inout "atlanta"
+		[Demo](./DemoSnapshot/UITestRecording.gif)
 ```
 ### 🛠 Appearance / Behavior Customization
 ![Demo Snapshot](./DemoSnapshot/startScreen.png)

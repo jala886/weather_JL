@@ -1127,5 +1127,83 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38F1D236-75E6-44DC-8527-22C3E45E5183"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherIcon_JLUITests/WeatherIcon_JLUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "testLaunchPerformance()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38F1D236-75E6-44DC-8527-22C3E45E5183 - 8894c71af22da4c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherIcon_JLUITests.WeatherIcon_JLUITests.testLaunchPerformance() throws -&gt; ()"
+                  moduleName = "WeatherIcon_JLUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/WeatherIcon_JL/WeatherIcon_JL/WeatherIcon_JLUITests/WeatherIcon_JLUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "38F1D236-75E6-44DC-8527-22C3E45E5183 - 4350083a3a35922a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherIcon_JLUITests.WeatherIcon_JLUITests.testExample() throws -&gt; ()"
+                  moduleName = "WeatherIcon_JLUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/WeatherIcon_JL/WeatherIcon_JL/WeatherIcon_JLUITests/WeatherIcon_JLUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "411">
+               </Location>
+               <Location
+                  uuid = "38F1D236-75E6-44DC-8527-22C3E45E5183 - 4350083a3a359294"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherIcon_JLUITests.WeatherIcon_JLUITests.testExample() throws -&gt; ()"
+                  moduleName = "WeatherIcon_JLUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/WeatherIcon_JL/WeatherIcon_JL/WeatherIcon_JLUITests/WeatherIcon_JLUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "38F1D236-75E6-44DC-8527-22C3E45E5183 - 4350083a3a359110"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherIcon_JLUITests.WeatherIcon_JLUITests.testExample() throws -&gt; ()"
+                  moduleName = "WeatherIcon_JLUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/WeatherIcon_JL/WeatherIcon_JL/WeatherIcon_JLUITests/WeatherIcon_JLUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "885">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -26,8 +26,20 @@ final class WeatherIcon_JLUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let searchfield = app.searchFields.element(boundBy: 0)
+        searchfield.tap()
+        searchfield.typeText("tokyo")
+        sleep(1)
+        var deleteString = String()
+        for _ in "tokyo" {
+            deleteString += XCUIKeyboardKey.delete.rawValue
+        }
+        searchfield.typeText(deleteString)
+        sleep(1)
+        searchfield.typeText("atlanta")
+        XCTAssert(true)
     }
 
     func testLaunchPerformance() throws {
