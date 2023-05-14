@@ -62,6 +62,7 @@ TDD:
 		(1) auto start app, input "tokyo"
 		(2) delete "tokyo"
 		(3) inout "atlanta"
+		
 		[Demo](./DemoSnapshot/UITestRecording.gif)
 ```
 ### 🛠 Appearance / Behavior Customization
