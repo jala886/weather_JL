@@ -1,5 +1,4 @@
-![Demo Snapshot](./DemoSnapshot/appIcon.jpeg | width=100)
-<img src="./DemoSnapshot/appIcon.jpeg" width="300">
+<img src="./DemoSnapshot/appIcon.jpeg" width="100">
 This is  open weather app for a inteview
 
 
