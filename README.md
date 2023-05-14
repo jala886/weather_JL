@@ -1,4 +1,4 @@
-![Demo Snapshot](./DemoSnapshot/startScreen.png)
+![Demo Snapshot](./DemoSnapshot/appIcon.jpeg)
 This is  open weather app for a inteview
 
 
@@ -47,6 +47,7 @@ TDD:
     WeatherIcon_JLUITests
 ```
 ### 🛠 Appearance / Behavior Customization
+![Demo Snapshot](./DemoSnapshot/startScreen.png)
 ![Demo Snapshot](./DemoSnapshot/searchScreen.png)
 
 ### 👀 Adapt visibility of:
