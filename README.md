@@ -2,7 +2,7 @@
 This is  an app to fetch and show data from OpenWeather
 
 
-[Demo](./DemoSnapshot/SimulatorScreenRecording.gif)
+### [App Demo](./DemoSnapshot/SimulatorScreenRecording.gif)
 
 
 ## 🚀 Features
