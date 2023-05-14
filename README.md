@@ -1,5 +1,5 @@
 <img src="./DemoSnapshot/appIcon.jpeg" width="100">
-This is  an app to fech and show data from OpenWeather
+This is  an app to fetch and show data from OpenWeather
 
 
 [Demo](./DemoSnapshot/SimulatorScreenRecording.gif)
@@ -27,23 +27,28 @@ Based on MVVM pattern
             Used SwiftUI             
     * ViewModel
         load data and combine with views
+	In loadData function, It will followed this sequence to fetch data
+	(1) searched city Name.If it is not nil, it will saved into userDefault.
+	(2) userDefault value
+	(3) user's location
+	(4) default cityName (Landon)
     * Model
-        defined data structur
+        defined data structure
     * Service
         Network:
             URLs
                 save the real URLs and return available URLs
             NetworkManager
-                send data by async/wait and clouser method
+                send data by async/wait and closure method
         LocationService:
             Support Location Manager
         MockService
             supply mock data for test and developing
     * Global
         Global
-            defined some global preperties, like appId
+            defined some global properties, like appId
         Utils
-            defined global functiun, like data convert, string operation. Logger. 
+            defined global function, like data convert, string operation. Logger. 
 
 TDD: 
     WeatherIcon_JLTests

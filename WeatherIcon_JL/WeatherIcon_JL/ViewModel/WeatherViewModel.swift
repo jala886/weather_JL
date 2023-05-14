@@ -8,11 +8,10 @@
 import Foundation
 import SwiftUI
 
-@MainActor
 class WeatherViewModel: ObservableObject {
     static let userDefaultKey = "weather_cityName"
     
-    @Published var weatherInfo = WeatherInfomation()
+    @MainActor @Published var weatherInfo = WeatherInfomation()
 
     private let networkManager: NetworkManagerProtocol
     private let locationService: LocationServiceProtocol
@@ -26,7 +25,7 @@ class WeatherViewModel: ObservableObject {
     func loadData() async {
         var response: Response?
         do {
-            if let cityName = weatherInfo.cityName {
+            if let cityName = await weatherInfo.cityName {
                 // (0) have city
                 response = try? await networkManager.fetchWeatherInfoByName(cityName: cityName,
                                                                             country: nil, state: nil)
@@ -39,7 +38,9 @@ class WeatherViewModel: ObservableObject {
                 response = try await networkManager.fetchWeatherInfoByPosition(lat: position.lat, lon: position.lon)
             } else {
                 // (3) default city
-                weatherInfo.cityName = Global.DEFAULTCITY
+                await MainActor.run {
+                    weatherInfo.cityName = Global.DEFAULTCITY
+                }
                 response = try? await networkManager.fetchWeatherInfoByName(cityName: weatherInfo.cityName,
                                                                             country: nil, state: nil)
             }
@@ -47,23 +48,25 @@ class WeatherViewModel: ObservableObject {
             print(error.localizedDescription)
         }
         if let response = response {
-                saveResponseToinfo(response)
-                saveLastCityName()
-                // download icon
-                if let iconName = response.weather?.first?.icon {
-                    try? networkManager.fetchIcon(name: iconName){ data in
+            await saveResponseToinfo(response)
+            await saveLastCityName()
+            // download icon
+            if let iconName = response.weather?.first?.icon {
+                try? networkManager.fetchIcon(name: iconName){ data in
+                    DispatchQueue.main.async {
                         self.weatherInfo.icon = Image(uiImage: (UIImage(data: data) ?? UIImage(systemName: Global.DEFAULTICON)!))
                     }
                 }
+            }
         }
     }
      
-    private func saveLastCityName()  {
+    @MainActor private func saveLastCityName()  {
         if let cityName = self.weatherInfo.cityName {
             UserDefaults.standard.set(cityName, forKey: Self.userDefaultKey)
         }
     }
-    private func saveResponseToinfo(_ response: Response) {
+    @MainActor private func saveResponseToinfo(_ response: Response) {
         self.weatherInfo.cityName = response.name
         self.weatherInfo.lat = response.coord?.lat
         self.weatherInfo.lon = response.coord?.lon
