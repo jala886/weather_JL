@@ -1,15 +1,14 @@
-![Demo Snapshot](./weather_JL
-/DemoSnapshot/startScreen.png)
+![Demo Snapshot](./DemoSnapshot/startScreen.png)
 This is  open weather app for a inteview
 
 
-## 馃殌 Features
+## 🚀 Features
 ```
 UIKit mixed with SwiftUI
 MVVM pattern
 TDD development
 ```
-### 馃柤 Overlays
+### 🖼 Overlays
 ```
 Based on MVVM pattern
     * Views
@@ -47,37 +46,35 @@ TDD:
     WeatherIcon_JLTests
     WeatherIcon_JLUITests
 ```
-### 馃洜 Appearance / Behavior Customization
-![Demo Snapshot](./weather_JL
-/DemoSnapshot/searchScreen.png)
+### 🛠 Appearance / Behavior Customization
+![Demo Snapshot](./DemoSnapshot/searchScreen.png)
 
-### 馃憖 Adapt visibility of:
-
-
-### 馃獎 Custom controls
+### 👀 Adapt visibility of:
 
 
-## 馃捇 Supported Platforms
+### 🪄 Custom controls
 
-| 馃摫 | iOS 13+ |
+
+## 💻 Supported Platforms
+
+| 📱 | iOS 13+ |
 | :-: | :-: |
-| 馃枼 | **macOS 10.15+** | 
-| 馃摵 | **tvOS 13+** |
-| 鈱氾笍 | **watchOS 6+** |
+| 🖥 | **macOS 10.15+** | 
+| 📺 | **tvOS 13+** |
+| ⌚️ | **watchOS 6+** |
 
 
 
-### 馃搶 Annotations: The old-fashioned approach
+### 📌 Annotations: The old-fashioned approach
 
 
 
-## 馃敥 Installation
+## 🔩 Installation
 
 
-## 鉁嶏笍 Author
+## ✍️ Author
 
 Jian Li
 
-## 馃搫 License
-
+## 📄 License
 
