@@ -61,7 +61,7 @@ TDD:
 	testExample()
 		(1) auto start app, input "tokyo"
 		(2) delete "tokyo"
-		(3) inout "atlanta"
+		(3) input "atlanta"
 ```
 ### [WeatherIcon_JLUITests Demo](./DemoSnapshot/UITestRecording.gif)
 
